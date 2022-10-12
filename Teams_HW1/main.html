@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>
+        Домашняя работа №1 от Грибанова Данила
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            display: inline-flex;
+			color: black;
+			font-family: 'Inter';
+            font-style: normal;
+			padding: 10px 20px 10px 20px;
+			border-radius: 12px;
+			background: linear-gradient(90deg, #FB9600 0%, #F5D31D 100%);
+			cursor: pointer;
+			user-select: none;
+			font-weight: bold;
+			font-size: 21px;
+            line-height: 39px;
+            min-width: 250px;
+            box-shadow: 0px 0px 25px -4px #FB9600;
+            margin: 10px 0 0 0; 
+        }	
+
+		.image {
+            vertical-align: text-bottom;           
+        }
+
+        .block{
+            margin: auto;     
+        }
+
+		.textContainer{
+            margin: 10px 0 0 0;
+            font-family: 'Inter';
+            color: rgb(179, 177, 177);  
+        }
+
+        .textContainer :hover{
+            border-color: black;
+            color: black;
+        }
+
+        .field{
+            border-radius: 10px;
+            min-width: 250px;
+            min-height: 50px;
+            padding: 0 20px;  
+            border-color: rgb(179, 177, 177);
+            font-size: 15px;   
+        }
+
+        .lbl{
+            padding: 0 0 3px 0;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="button">
+        <div class="block">
+            <img class="image" src="clarity_play-solid.svg" alt="play">
+            Слушать      
+        </div>            
+    </div>
+
+    <div class="textContainer">
+        <div class="lbl">
+            <label for="field" >Label</label>
+        </div>
+        <div>
+            <input type="text" class="field" id="field" placeholder="Введите текст"/>
+        </div>
+    </div>
+
+
+    <div>
+        <h1>Моя книга</h1>
+        <h2>Глава 1</h2>
+        <div id="book">
+            <p>
+                В один зимний день, а именно 14 декабря, в 2002 году я родился.
+            </p>
+        </div>
+    </div>
+
+    <div class="button" onclick="createPost()">
+        <div class="block">
+            Опубликовать комментарий
+        </div>
+    </div>
+
+    <div class="button" onclick="deletePost()">
+        <div class="block">
+            Удалить последний
+        </div>
+    </div>
+
+    <div class="button" onclick="deleteAllPosts()">
+        <div class="block">
+            Удалить все
+        </div>
+    </div>
+
+    <script>
+        function createPost() {
+            let inputPost = document.getElementById('field');
+            let post = inputPost.value;
+            let book = document.getElementById('book');
+            let newParagraph = document.createElement('p');
+            book.append(newParagraph);
+            newParagraph.innerHTML = post;
+            inputPost.value = '';
+        }
+        
+        function deletePost(){
+                let div = document.getElementById("book");
+                if(div.lastChild) {
+                    div.removeChild(div.lastChild);
+                }
+            }
+
+        function deleteAllPosts() {
+            document.getElementById("book").innerHTML=""
+        }
+    </script>		
+</body>
+</html>

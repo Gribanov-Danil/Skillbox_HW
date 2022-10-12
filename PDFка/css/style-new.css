@@ -1,0 +1,44 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.container{
+  width: 1170px;
+  margin: 0 auto;
+}
+
+img{
+  max-width: 100%;
+}
+
+.main-title{
+  color: #3f2aff;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 60px;
+
+}
+
+.text{
+  margin-bottom: 30px;
+  max-width: 730px;
+  font-size: 20px;
+  line-height: 160%;
+  color: #333;
+}
+
+.quote-text{
+  text-align: center;
+  max-width: 900px;
+  padding: 25px 120px;
+  background-color: #ebebeb;
+}
+
+.quote{
+  font-weight: 700;
+}
