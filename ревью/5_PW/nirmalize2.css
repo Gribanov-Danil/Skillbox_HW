@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+a, a:visited {
+  color: inherit;
+}
+
+html, body{
+  font-size: 18px;
+  line-height: 100%;
+  min-height: 100vh; /*Относительная единицы измерения CSS, которая эквивалентна 1% высоты окна браузера.*/
+}
+
+button{
+  cursor: default;
+}
+
+button, input{
+  -webkit-appearance: none
+  /*для отображения элемента, используя базовые стили платформы на основе темы операционной системы.*/
+  /*Поддерзживается Chrome 1.0 и выше и Safari 3.0 и выше*/
+  /*Также поддерживают Firefox и Edge, но в виде совместимости с -moz-appearance*/
+}
