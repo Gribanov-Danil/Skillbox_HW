@@ -107,6 +107,9 @@ h4 {
     margin: 0;
     margin-bottom: 20px;
     margin-right: 40px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
 }
 
 .section-offset {
@@ -352,6 +355,7 @@ h4 {
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
+    
 }
 
 
@@ -482,7 +486,160 @@ h4 {
 
 /*Want-tour*/
 
-.blog-container{
+.blog-container {
+    padding: 45px;
     background: #E9E9E9;
     border-radius: 15px;
+}
+
+.want-tour-container {
+    gap: 41px;
+}
+
+.want-tour-form {
+    padding: 31px 28px;
+    gap: 51px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.discription {
+    margin-bottom: 15px;
+    font-weight: 400;
+font-size: 12px;
+line-height: 12px;
+}
+
+.form-btn {
+    padding: 13px 30px;
+}
+
+.select-block {
+    width: 169px;
+}
+
+.input-block {
+    width: 121px;
+}
+
+
+.select-area {
+    width: inherit;
+    border: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.input-area {
+    width: inherit;
+    border: 0px;
+    border-bottom: 1px solid;
+    border-color: #E9E9E9;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+
+/*address*/
+
+.contacts-address{
+    padding: 45px;
+    gap: 52px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.contacts-list{
+    flex-direction: column;
+}
+
+.contact-item{
+    display: flex;
+    padding-bottom: 23px;
+    border-bottom: 1px solid #E9E9E9;
+}
+
+
+.contact-item:not(:last-child){
+    margin-bottom: 25px;
+}
+
+.contact-item:last-child{
+    margin-bottom: 45px;
+}
+
+.contact-title{
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 20px;
+}
+
+.address-txt{
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+
+.email-discription{
+    color: #999999;
+}
+
+.contacts-container{
+    margin-bottom: 40px;
+}
+
+.address-links{
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+
+
+/*footer*/
+
+
+.footer{
+    background: #333333;
+border-radius: 15px;
+}
+
+.footer-container{
+    padding: 45px;
+}
+
+.footer-text{
+    font-weight: 400;
+font-size: 16px;
+line-height: 190%;
+color: #FFFFFF;
+}
+
+.lawyer{
+    width: 302px;
+    margin-right: 125px;
+}
+
+.copyright{
+    margin-bottom: 40px;
+}
+
+.footer-address{
+    margin-right: 270px;
+}
+
+.social-block{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-address-data{
+    margin-bottom: 15px;
+}
+
+.footer-logo{
+    position: static;
+
 }
