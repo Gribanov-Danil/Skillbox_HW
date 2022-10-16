@@ -355,7 +355,7 @@ h4 {
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
-    
+
 }
 
 
@@ -506,8 +506,8 @@ h4 {
 .discription {
     margin-bottom: 15px;
     font-weight: 400;
-font-size: 12px;
-line-height: 12px;
+    font-size: 12px;
+    line-height: 12px;
 }
 
 .form-btn {
@@ -544,120 +544,120 @@ line-height: 12px;
 
 /*address*/
 
-.contacts-address{
+.contacts-address {
     padding: 45px;
     gap: 52px;
     border-radius: 15px;
     background-color: white;
 }
 
-.contacts-list{
+.contacts-list {
     flex-direction: column;
 }
 
-.contact-item{
+.contact-item {
     display: flex;
     padding-bottom: 23px;
     border-bottom: 1px solid #E9E9E9;
 }
 
 
-.contact-item:not(:last-child){
+.contact-item:not(:last-child) {
     margin-bottom: 25px;
 }
 
-.contact-item:last-child{
+.contact-item:last-child {
     margin-bottom: 45px;
 }
 
-.contact-title{
-    
+.contact-title {
+
     font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
 }
 
-.address-title{
+.address-title {
     margin-right: 83px;
 }
 
-.tel-title{
+.tel-title {
     margin-right: 47px;
 }
 
-.email-title{
+.email-title {
     margin-right: 93px;
 }
 
-.graphik-title{
+.graphik-title {
     margin-right: 74px;
 }
 
-.address-txt{
+.address-txt {
     font-weight: 400;
-font-size: 16px;
-line-height: 150%;
+    font-size: 16px;
+    line-height: 150%;
 }
 
-.email-discription{
+.email-discription {
     color: #999999;
 }
 
-.contacts-container{
+.contacts-container {
     margin-bottom: 40px;
 }
 
-.address-links{
+.address-links {
     font-weight: 400;
-font-size: 16px;
-line-height: 150%;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 
 /*footer*/
 
 
-.footer{
+.footer {
     background: #333333;
-border-radius: 15px;
-position: relative;
+    border-radius: 15px;
+    position: relative;
 }
 
-.footer-container{
+.footer-container {
     padding: 45px;
 }
 
-.footer-text{
+.footer-text {
     font-weight: 400;
-font-size: 16px;
-line-height: 190%;
-color: #FFFFFF;
+    font-size: 16px;
+    line-height: 190%;
+    color: #FFFFFF;
 }
 
-.lawyer{
+.lawyer {
     width: 302px;
     margin-right: 125px;
 }
 
-.copyright{
+.copyright {
     margin-bottom: 40px;
 }
 
-.footer-address{
+.footer-address {
     margin-right: 270px;
 }
 
-.social-block{
+.social-block {
     flex-direction: column;
     gap: 20px;
 }
 
-.footer-address-data{
+.footer-address-data {
     margin-bottom: 15px;
 }
 
-.footer-logo{
+.footer-logo {
     position: absolute;
     left: 739px;
     top: 112px;
