@@ -571,10 +571,27 @@ line-height: 12px;
 }
 
 .contact-title{
+    
     font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 20px;
+}
+
+.address-title{
+    margin-right: 83px;
+}
+
+.tel-title{
+    margin-right: 47px;
+}
+
+.email-title{
+    margin-right: 93px;
+}
+
+.graphik-title{
+    margin-right: 74px;
 }
 
 .address-txt{
@@ -604,6 +621,7 @@ line-height: 150%;
 .footer{
     background: #333333;
 border-radius: 15px;
+position: relative;
 }
 
 .footer-container{
@@ -640,6 +658,7 @@ color: #FFFFFF;
 }
 
 .footer-logo{
-    position: static;
-
+    position: absolute;
+    left: 739px;
+    top: 112px;
 }
