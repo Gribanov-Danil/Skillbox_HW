@@ -84,7 +84,7 @@ h4 {
     list-style: none;
 }
 
-.btn-reset {
+.btn__reset {
     padding: 13px 20px;
     color: #CC9933;
     background-color: transparent;
@@ -103,7 +103,7 @@ h4 {
     margin: 0 auto;
 }
 
-.section-title {
+.container .section-title {
     margin: 0;
     margin-bottom: 20px;
     margin-right: 40px;
@@ -123,28 +123,30 @@ h4 {
     padding: 30px 0 70px 0;
 }
 
-.header-container {
+.header__container {
     align-items: center;
 }
 
-.header-container:not(:last-child) {
+.header__container:not(:last-child) {
+    display: flex;
     margin-bottom: 30px;
 }
 
-.logo-phone {
+.top-header__contact {
+    display: flex;
     align-items: center;
     margin-right: auto;
 }
 
-.header-logo {
+.contact__logo {
     margin-right: 40px;
 }
 
-.header-adress {
+.contact__tel {
     color: #666666;
 }
 
-.account {
+.top-header__account {
     background-image: url('../img/LK-vector.svg');
     background-position: left;
     background-repeat: no-repeat;
@@ -155,38 +157,44 @@ h4 {
 }
 
 .bottom-header {
+    display: flex;
     background-color: white;
     border-radius: 15px;
 }
 
-.header-list-item {
+.navigation__list{
+    display: flex;
+}
+
+.navigation__item {
     margin: 27px 45px 27px 0;
 }
 
-.header-list-item:first-child {
+.navigation__item:first-child {
     margin: 27px 45px 27px 45px;
 }
 
-.header-list-item:last-child {
+.navigation__item:last-child {
     margin: 27px 0;
 }
 
-.header-navigation {
+.bottom-header__navigation {
     margin: 0;
     margin-right: auto;
 }
 
-.header-btn:not(:last-child) {
+.bottom-header__btn:not(:last-child) {
     margin-right: 40px;
 }
 
-.header-btn:last-child {
+.bottom-header__btn:last-child {
     margin-right: 45px;
 }
 
 /*main*/
 
-.panels {
+.panel {
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 1170px;
