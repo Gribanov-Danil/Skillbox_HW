@@ -91,6 +91,22 @@ h4 {
     cursor: pointer;
     border: 1px solid #CC9933;
     border-radius: 10px;
+    transition:color 0.1s linear, background-color 0.15s ease-in-out;
+}
+
+.btn__reset:focus{
+    color: #fff;
+    background-color: #CC9933;
+}   
+
+.btn__reset:hover{
+    color: #fff;
+    background-color: #CC9933;
+}
+
+.btn__reset:active{
+    color: #fff;
+    background-color: #A47312;
 }
 
 .flex {
@@ -144,6 +160,29 @@ h4 {
 
 .contact__tel {
     color: #666666;
+}
+
+.navigation__link{
+    color: #666;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.navigation__link:focus,
+.contact__tel:focus{
+    color: #CC9933;
+    border: 1px solid #CC9933;
+}
+
+.navigation__link:hover,
+.contact__tel:hover{
+    color: #CC9933;
+}
+
+.navigation__link:active,
+.contact__tel:active{
+    color: #A47312;
 }
 
 .top-header__account {
