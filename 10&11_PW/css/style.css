@@ -193,7 +193,7 @@ h4 {
 
 /*main*/
 
-.panel {
+.panels {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -203,7 +203,7 @@ h4 {
 
 }
 
-.horizontal-offer {
+.panel__horizontal-offer {
     width: 573px;
     height: 258px;
     border-radius: 15px;
