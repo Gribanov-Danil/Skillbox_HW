@@ -141,6 +141,12 @@ h4 {
 
 .header__container {
     align-items: center;
+
+}
+
+.account{
+    display: flex;
+    position: relative;
 }
 
 .header__container:not(:last-child) {
@@ -150,8 +156,13 @@ h4 {
 
 .top-header__contact {
     display: flex;
+    position: relative;
     align-items: center;
     margin-right: auto;
+}
+
+.contact__address{
+position: relative;
 }
 
 .contact__logo {
@@ -169,15 +180,35 @@ h4 {
     line-height: 16px;
 }
 
-.navigation__link:focus,
-.contact__tel:focus{
-    color: #CC9933;
-    border: 1px solid #CC9933;
+.navigation__link,
+.contact__tel{
+    transition: color 0.15s linear, outline 0.1s linear;
 }
+
+.navigation__link::after,
+.contact__tel::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 1px solid #CC9933;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.navigation__link:focus::after,
+.contact__tel:focus::after{
+    opacity: 1;
+}
+
+
 
 .navigation__link:hover,
 .contact__tel:hover{
     color: #CC9933;
+    outline: none;
 }
 
 .navigation__link:active,
@@ -185,15 +216,54 @@ h4 {
     color: #A47312;
 }
 
-.top-header__account {
-    background-image: url('../img/LK-vector.svg');
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 21px 12px;
-    padding-left: 28px;
-    padding-top: 2px;
-
+.top-header__icon{
+    margin-right: 7px;
+    fill: #CC9933;
 }
+
+
+.link::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 1px solid #CC9933;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
+.link:focus::after{
+    opacity: 1;
+}
+
+.link:focus{
+    color: #CC9933;
+    outline: 1px solid #CC9933;
+}
+
+.link:focus .icon{
+    fill: #CC9933;
+}
+
+.link:hover{
+    color: #F0BF5F;
+    outline: none;
+}
+
+.link:hover .icon{
+    fill: #F0BF5F;
+}
+
+.link:active{
+    color: #A47312;
+}
+
+.link:active .icon{
+    fill: #A47312;
+}
+
 
 .bottom-header {
     display: flex;
@@ -203,19 +273,18 @@ h4 {
 
 .navigation__list{
     display: flex;
+    gap: 45px;
 }
 
 .navigation__item {
-    margin: 27px 45px 27px 0;
+    position: relative;
+    margin: 27px 0;
 }
 
 .navigation__item:first-child {
-    margin: 27px 45px 27px 45px;
+    margin: 27px 0 27px 45px;
 }
 
-.navigation__item:last-child {
-    margin: 27px 0;
-}
 
 .bottom-header__navigation {
     margin: 0;
@@ -304,13 +373,6 @@ h4 {
     color: #FFFFFF;
 }
 
-.show-more-icon {
-    background-image: url('../img/show-more-vector.svg');
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 11px 11px;
-    padding-right: 15px;
-}
 
 .show-more-link {
     margin-bottom: 40px;
@@ -318,9 +380,17 @@ h4 {
     font-size: 16px;
     line-height: 16px;
     color: #F0BF5F;
+}
 
+.offer-txt__icon{
+    stroke: #F0BF5F;
+}
+.show-more-link:active{
+    color: #fff;
+}
 
-
+.show-more-link:active .offer-txt__icon{
+    stroke: #fff;
 }
 
 
@@ -342,6 +412,7 @@ h4 {
 }
 
 .service-preview {
+    position: relative;
     width: 573px;
     height: 330px;
     border-radius: 15px;
@@ -372,6 +443,23 @@ h4 {
     font-size: 16px;
     line-height: 200%;
 }
+
+.service-link:focus{
+    outline: none;
+}
+
+.link__icon{
+    stroke: #CC9933;
+}
+
+.link:hover .link__icon{
+    stroke: #F0BF5F;
+}
+
+.link:active .link__icon{
+    stroke: #CC9933;
+}
+
 
 
 
@@ -591,6 +679,10 @@ h4 {
 
 /*address*/
 
+
+.telephones__telephone{
+    position: relative;
+}
 .contacts-address {
     padding: 45px;
     gap: 52px;
