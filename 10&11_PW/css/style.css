@@ -1,4 +1,4 @@
-:root{
+:root {
     --hover-link-color: #F0BF5F;
     --defoult-n-hover-color: #CC9933;
     --active-color: #A47312;
@@ -99,20 +99,20 @@ h4 {
     cursor: pointer;
     border: 1px solid var(--defoult-n-hover-color);
     border-radius: 10px;
-    transition:color 0.1s linear, background-color 0.15s ease-in-out;
+    transition: color 0.1s linear, background-color 0.15s ease-in-out;
 }
 
-.btn__reset:focus{
-    color: #fff;
-    background-color: var(--defoult-n-hover-color);
-}   
-
-.btn__reset:hover{
+.btn__reset:focus {
     color: #fff;
     background-color: var(--defoult-n-hover-color);
 }
 
-.btn__reset:active{
+.btn__reset:hover {
+    color: #fff;
+    background-color: var(--defoult-n-hover-color);
+}
+
+.btn__reset:active {
     color: #fff;
     background-color: var(--active-color);
 }
@@ -153,7 +153,7 @@ h4 {
 
 }
 
-.account{
+.account {
     display: flex;
     position: relative;
 }
@@ -170,8 +170,8 @@ h4 {
     margin-right: auto;
 }
 
-.contact__address{
-position: relative;
+.contact__address {
+    position: relative;
 }
 
 .contact__logo {
@@ -182,7 +182,7 @@ position: relative;
     color: #666666;
 }
 
-.navigation__link{
+.navigation__link {
     color: #666;
     font-weight: 400;
     font-size: 16px;
@@ -190,12 +190,12 @@ position: relative;
 }
 
 .navigation__link,
-.contact__tel{
+.contact__tel {
     transition: color 0.15s linear, outline 0.1s linear;
 }
 
 .navigation__link::after,
-.contact__tel::after{
+.contact__tel::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -208,30 +208,30 @@ position: relative;
 }
 
 .navigation__link:focus::after,
-.contact__tel:focus::after{
+.contact__tel:focus::after {
     opacity: 1;
 }
 
 
 
 .navigation__link:hover,
-.contact__tel:hover{
+.contact__tel:hover {
     color: var(--defoult-n-hover-color);
     outline: none;
 }
 
 .navigation__link:active,
-.contact__tel:active{
+.contact__tel:active {
     color: var(--active-color);
 }
 
-.top-header__icon{
+.top-header__icon {
     margin-right: 7px;
     fill: var(--defoult-n-hover-color);
 }
 
 
-.link::after{
+.link::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -243,29 +243,29 @@ position: relative;
     transform: translate(-50%, -50%);
 }
 
-.link:focus::after{
+.link:focus::after {
     opacity: 1;
 }
 
 
-.link:focus .icon{
+.link:focus .icon {
     fill: var(--defoult-n-hover-color);
 }
 
-.link:hover{
+.link:hover {
     color: var(--hover-link-color);
     outline: none;
 }
 
-.link:hover .icon{
+.link:hover .icon {
     fill: var(--hover-link-color);
 }
 
-.link:active{
+.link:active {
     color: var(--active-color);
 }
 
-.link:active .icon{
+.link:active .icon {
     fill: var(--active-color);
 }
 
@@ -276,7 +276,7 @@ position: relative;
     border-radius: 15px;
 }
 
-.navigation__list{
+.navigation__list {
     display: flex;
     gap: 45px;
 }
@@ -332,19 +332,16 @@ position: relative;
 }
 
 .firs-offer {
-    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%)
-    ,url(../img/offers/maldivs.jpg);
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/offers/maldivs.jpg);
 }
 
 .second-off {
-    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%)
-    ,url(../img/offers/crit.jpg);
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/offers/crit.jpg);
 }
 
 .third-off {
-    background-image: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%)
-    ,url(../img/offers/lux.jpg);
-    
+    background-image: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/offers/lux.jpg);
+
 }
 
 .offer-txt {
@@ -393,14 +390,15 @@ position: relative;
     color: var(--hover-link-color);
 }
 
-.offer-txt__icon{
+.offer-txt__icon {
     stroke: var(--hover-link-color);
 }
-.show-more-link:active{
+
+.show-more-link:active {
     color: #fff;
 }
 
-.show-more-link:active .offer-txt__icon{
+.show-more-link:active .offer-txt__icon {
     stroke: #fff;
 }
 
@@ -454,19 +452,19 @@ position: relative;
     line-height: 200%;
 }
 
-.service-link:focus{
+.service-link:focus {
     outline: none;
 }
 
-.link__icon{
+.link__icon {
     stroke: var(--defoult-n-hover-color);
 }
 
-.link:hover .link__icon{
+.link:hover .link__icon {
     stroke: var(--hover-link-color);
 }
 
-.link:active .link__icon{
+.link:active .link__icon {
     stroke: var(--defoult-n-hover-color);
 }
 
@@ -617,12 +615,11 @@ position: relative;
 
 .show-more-item {
     position: relative;
-    background-image: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%)
-    ,url(../img/placements/9.jpg);
-    transition:0.07s linear;
+    background-image: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url(../img/placements/9.jpg);
+    transition: 0.07s linear;
 }
 
-.show-more-item:active{
+.show-more-item:active {
     transform: scale(0.95);
 }
 
@@ -640,7 +637,7 @@ position: relative;
     background-position: right;
 }
 
-.show-more-text::after{
+.show-more-text::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -714,9 +711,10 @@ position: relative;
 /*address*/
 
 
-.telephones__telephone{
+.telephones__telephone {
     position: relative;
 }
+
 .contacts-address {
     padding: 45px;
     gap: 52px;
@@ -771,7 +769,7 @@ position: relative;
     margin-right: 74px;
 }
 
-.email-links__email-link{
+.email-links__email-link {
     display: inline-block;
 }
 
@@ -840,7 +838,7 @@ position: relative;
 }
 
 
-.emails{
+.emails {
     display: flex;
     flex-direction: column;
 }
@@ -851,28 +849,28 @@ position: relative;
     top: 112px;
 }
 
-.emails__link{
+.emails__link {
     display: inline-block;
 }
 
-.lawyer__link{
+.lawyer__link {
     display: inline-block;
     position: relative;
 }
 
-.social-link__icon{
+.social-link__icon {
     fill: var(--grey-text);
 }
 
-.social-link__icon:focus{
+.social-link__icon:focus {
     fill: var(--defoult-n-hover-color);
 }
 
 
-.social-link__icon:hover{
+.social-link__icon:hover {
     fill: var(--defoult-n-hover-color);
 }
 
-.social-link__icon:active{
+.social-link__icon:active {
     fill: var(--active-color);
 }
