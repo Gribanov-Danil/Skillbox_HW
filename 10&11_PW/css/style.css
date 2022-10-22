@@ -1,3 +1,11 @@
+:root{
+    --hover-link-color: #F0BF5F;
+    --defoult-n-hover-color: #CC9933;
+    --active-color: #A47312;
+    --grey-text: #999999;
+    --title-text: #333333;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -9,7 +17,7 @@ html {
 }
 
 a {
-    color: #CC9933;
+    color: var(--defoult-n-hover-color);
     text-decoration: none;
 }
 
@@ -86,27 +94,27 @@ h4 {
 
 .btn__reset {
     padding: 13px 20px;
-    color: #CC9933;
+    color: var(--defoult-n-hover-color);
     background-color: transparent;
     cursor: pointer;
-    border: 1px solid #CC9933;
+    border: 1px solid var(--defoult-n-hover-color);
     border-radius: 10px;
     transition:color 0.1s linear, background-color 0.15s ease-in-out;
 }
 
 .btn__reset:focus{
     color: #fff;
-    background-color: #CC9933;
+    background-color: var(--defoult-n-hover-color);
 }   
 
 .btn__reset:hover{
     color: #fff;
-    background-color: #CC9933;
+    background-color: var(--defoult-n-hover-color);
 }
 
 .btn__reset:active{
     color: #fff;
-    background-color: #A47312;
+    background-color: var(--active-color);
 }
 
 .flex {
@@ -126,6 +134,7 @@ h4 {
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
+    color: var(--title-text);
 }
 
 .section-offset {
@@ -191,7 +200,7 @@ position: relative;
     position: absolute;
     left: 50%;
     top: 50%;
-    border: 1px solid #CC9933;
+    border: 1px solid var(--defoult-n-hover-color);
     width: calc(100% + 10px);
     height: calc(100% + 10px);
     opacity: 0;
@@ -207,18 +216,18 @@ position: relative;
 
 .navigation__link:hover,
 .contact__tel:hover{
-    color: #CC9933;
+    color: var(--defoult-n-hover-color);
     outline: none;
 }
 
 .navigation__link:active,
 .contact__tel:active{
-    color: #A47312;
+    color: var(--active-color);
 }
 
 .top-header__icon{
     margin-right: 7px;
-    fill: #CC9933;
+    fill: var(--defoult-n-hover-color);
 }
 
 
@@ -227,7 +236,7 @@ position: relative;
     position: absolute;
     left: 50%;
     top: 50%;
-    border: 1px solid #CC9933;
+    border: 1px solid var(--defoult-n-hover-color);
     width: calc(100% + 10px);
     height: calc(100% + 10px);
     opacity: 0;
@@ -238,30 +247,26 @@ position: relative;
     opacity: 1;
 }
 
-.link:focus{
-    color: #CC9933;
-    outline: 1px solid #CC9933;
-}
 
 .link:focus .icon{
-    fill: #CC9933;
+    fill: var(--defoult-n-hover-color);
 }
 
 .link:hover{
-    color: #F0BF5F;
+    color: var(--hover-link-color);
     outline: none;
 }
 
 .link:hover .icon{
-    fill: #F0BF5F;
+    fill: var(--hover-link-color);
 }
 
 .link:active{
-    color: #A47312;
+    color: var(--active-color);
 }
 
 .link:active .icon{
-    fill: #A47312;
+    fill: var(--active-color);
 }
 
 
@@ -312,6 +317,7 @@ position: relative;
 }
 
 .horizontal-offer {
+    position: relative;
     width: 573px;
     height: 258px;
     border-radius: 15px;
@@ -319,21 +325,26 @@ position: relative;
 }
 
 .vertical-offer {
+    position: relative;
     width: 573px;
     height: 540px;
     border-radius: 15px;
 }
 
 .firs-offer {
-    background-image: url(../img/offers/maldivs.jpg);
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%)
+    ,url(../img/offers/maldivs.jpg);
 }
 
 .second-off {
-    background-image: url(../img/offers/crit.jpg);
+    background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%)
+    ,url(../img/offers/crit.jpg);
 }
 
 .third-off {
-    background-image: url(../img/offers/lux.jpg);
+    background-image: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%)
+    ,url(../img/offers/lux.jpg);
+    
 }
 
 .offer-txt {
@@ -379,11 +390,11 @@ position: relative;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #F0BF5F;
+    color: var(--hover-link-color);
 }
 
 .offer-txt__icon{
-    stroke: #F0BF5F;
+    stroke: var(--hover-link-color);
 }
 .show-more-link:active{
     color: #fff;
@@ -401,7 +412,6 @@ position: relative;
     font-weight: 400;
     font-size: 16px;
     line-height: 200%;
-    color: #000000;
 }
 
 /*service*/
@@ -449,15 +459,15 @@ position: relative;
 }
 
 .link__icon{
-    stroke: #CC9933;
+    stroke: var(--defoult-n-hover-color);
 }
 
 .link:hover .link__icon{
-    stroke: #F0BF5F;
+    stroke: var(--hover-link-color);
 }
 
 .link:active .link__icon{
-    stroke: #CC9933;
+    stroke: var(--defoult-n-hover-color);
 }
 
 
@@ -536,7 +546,7 @@ position: relative;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    color: #999999;
+    color: var(--grey-text);
 }
 
 .price {
@@ -606,18 +616,42 @@ position: relative;
 }
 
 .show-more-item {
-    background-image: url(../img/placements/9.jpg);
+    position: relative;
+    background-image: linear-gradient(0deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%)
+    ,url(../img/placements/9.jpg);
+    transition:0.07s linear;
 }
+
+.show-more-item:active{
+    transform: scale(0.95);
+}
+
 
 .show-more-text {
     display: inline-block;
     margin: 373px 0px 0px 54px;
+    padding-right: 15px;
     font-weight: 500;
     font-size: 20px;
     line-height: 200%;
     color: #FFFFFF;
     background-image: url('../img/show-All-variants.svg');
+    background-repeat: no-repeat;
+    background-position: right;
 }
+
+.show-more-text::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border: 1px solid var(--defoult-n-hover-color);
+    width: calc(100%);
+    height: calc(100%);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+}
+
 
 /*Want-tour*/
 
@@ -709,6 +743,10 @@ position: relative;
     margin-bottom: 45px;
 }
 
+/*.address-data{
+    position: relative;
+}*/
+
 .contact-title {
 
     font-style: normal;
@@ -733,6 +771,10 @@ position: relative;
     margin-right: 74px;
 }
 
+.email-links__email-link{
+    display: inline-block;
+}
+
 .address-txt {
     font-weight: 400;
     font-size: 16px;
@@ -740,7 +782,7 @@ position: relative;
 }
 
 .email-discription {
-    color: #999999;
+    color: var(--grey-text);
 }
 
 .contacts-container {
@@ -748,6 +790,7 @@ position: relative;
 }
 
 .address-links {
+    position: relative;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -758,7 +801,7 @@ position: relative;
 
 
 .footer {
-    background: #333333;
+    background: var(--title-text);
     border-radius: 15px;
     position: relative;
 }
@@ -796,8 +839,40 @@ position: relative;
     margin-bottom: 15px;
 }
 
+
+.emails{
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-logo {
     position: absolute;
     left: 739px;
     top: 112px;
+}
+
+.emails__link{
+    display: inline-block;
+}
+
+.lawyer__link{
+    display: inline-block;
+    position: relative;
+}
+
+.social-link__icon{
+    fill: var(--grey-text);
+}
+
+.social-link__icon:focus{
+    fill: var(--defoult-n-hover-color);
+}
+
+
+.social-link__icon:hover{
+    fill: var(--defoult-n-hover-color);
+}
+
+.social-link__icon:active{
+    fill: var(--active-color);
 }
