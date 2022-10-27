@@ -267,10 +267,11 @@ h4 {
 
 /*about-us*/
 .about-us {
+  margin: 0 67px;
 }
 .about-us__text{
   margin-right: auto;
-  margin-left: 67px;
+  /*margin-left: 67px;*/
 }
 
 .about-us__text .section-title{
@@ -286,21 +287,72 @@ color: var(--dark);
 }
 .cards {
   display: flex;
+flex-wrap: wrap;
 }
-.about-us__cards {
-}
-.details-card {
-}
-.cards__details-card {
 
-background: url('../img/about-us/man.jpg');
-background-repeat: no-repeat;
+.card{
+  --gap: 32px;
+  width: calc((100% - (var(--gap))) / 2);
+}
+
+.card:not(:last-child){
+margin-right: 32px;
+}
+
+.about-us__cards {
+
+}
+
+
+.details-card {
+  position: relative;
+  min-height: 622px;
+  max-width: 868px;
+  position: relative;
+  background: url('../img/about-us/man.jpg');
+  background-repeat: no-repeat;
+}
+
+.card__details-card {
+  position: absolute;
+bottom: 0px;
+width: 100%;
+
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 32px;
+
 }
 .details-card__container {
 }
-.details-card__text {
+
+.details-card__bottom{
+display: flex;
+width: 100%;
+padding: 50px;
 }
-.details-card__btn {
+.details-card__text {
+  max-width: 433px;
+  display: inline-block;
+  font-weight: 700;
+font-size: 16px;
+line-height: 32px;
+color: var(--white);
+}
+
+.btn-container{
+  display: flex;
+}
+
+.details-card__item:not(:last-child){
+  margin-right: 160px;
+}
+
+.btn-container__btn {
+  padding: 18px 36px;
+    margin: auto;
+    background: transparent;
+    border: 3px solid #FF9900;
+border-radius: 16px;
 }
 .btn__reset {
 }
