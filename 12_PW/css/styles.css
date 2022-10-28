@@ -254,7 +254,8 @@ h4 {
   font-size: 23px;
   line-height: 28px;
 }
-.hero-btn--text{
+
+.hero-btn--text {
   padding-top: 4px;
 
 }
@@ -269,90 +270,134 @@ h4 {
 .about-us {
   margin: 0 67px;
 }
-.about-us__text{
+
+.about-us__text {
   margin-right: auto;
   /*margin-left: 67px;*/
 }
 
-.about-us__text .section-title{
+.about-us__text .section-title {
   margin-bottom: 20px;
 }
+
 .about-us__dicr {
   max-width: 1235px;
   margin-bottom: 50px;
   font-weight: 400;
-font-size: 16px;
-line-height: 32px;
-color: var(--dark);
-}
-.cards {
-  display: flex;
-flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--dark);
 }
 
-.card{
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
   --gap: 32px;
   width: calc((100% - (var(--gap))) / 2);
 }
 
-.card:not(:last-child){
-margin-right: 32px;
+.card:not(:last-child) {
+  margin-right: 32px;
 }
 
-.about-us__cards {
-
-}
+.about-us__cards {}
 
 
 .details-card {
   position: relative;
   min-height: 622px;
   max-width: 868px;
-  position: relative;
   background: url('../img/about-us/man.jpg');
   background-repeat: no-repeat;
 }
 
 .card__details-card {
   position: absolute;
-bottom: 0px;
-width: 100%;
+  bottom: 0px;
+  width: 100%;
 
   background: rgba(0, 0, 0, 0.5);
   border-radius: 32px;
 
 }
-.details-card__container {
+
+.details-card__container {}
+
+.details-card__bottom {
+  display: flex;
+  width: 100%;
+  padding: 50px;
 }
 
-.details-card__bottom{
-display: flex;
-width: 100%;
-padding: 50px;
-}
 .details-card__text {
   max-width: 433px;
   display: inline-block;
   font-weight: 700;
-font-size: 16px;
-line-height: 32px;
-color: var(--white);
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--white);
 }
 
-.btn-container{
+.btn-container {
   display: flex;
 }
 
-.details-card__item:not(:last-child){
+.details-card__item:not(:last-child) {
   margin-right: 160px;
 }
 
 .btn-container__btn {
   padding: 18px 36px;
-    margin: auto;
-    background: transparent;
-    border: 3px solid #FF9900;
-border-radius: 16px;
+  margin: auto;
+  background: transparent;
+  border: 3px solid #FF9900;
+  border-radius: 16px;
 }
-.btn__reset {
+
+.benefits__card {
+  margin: 65px auto 65px 60px;
+
+
+  padding-left: 240px;
+}
+
+.card__container {
+  min-height: 295px;
+  max-width: 868px;
+  border: 1px solid var(--light-grey);
+  border-radius: 32px;
+}
+
+.card__container:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.frs-benefit {
+  background: url('../img/about-us/circle-sqr.png');
+  background-repeat: no-repeat;
+
+}
+
+.scn-benefit {
+  background: url('../img/about-us/circle-citroen.png');
+  background-repeat: no-repeat;
+}
+
+.benefit__title {
+  margin-bottom: 8px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.benefit__discr {
+  max-width: 450px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
 }
