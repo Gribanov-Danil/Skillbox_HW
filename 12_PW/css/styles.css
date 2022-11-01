@@ -135,11 +135,19 @@ h4 {
   color: var(--white);
   background-color: var(--default-color);
   cursor: pointer;
-  border: 1px solid var(--default-color);
+  border: 0;
   border-radius: 16px;
-  transition: color 0.1s linear, background-color 0.15s ease-in-out;
+  transition:background-color 0.06s ease-in-out;
 }
 
+.btn__reset:focus,
+.btn__reset:hover{
+  background-color: var(--hover-n-focus);
+}
+
+.btn__reset:active{
+  background-color: var(--active);
+}
 
 /*global*/
 
@@ -152,6 +160,49 @@ h4 {
 
 .main {
   margin: 0 max(67px, calc((100% - 1770px) / 2));
+}
+
+.link{
+  position: relative;
+  transition: 0.06s ease-in-out;
+}
+
+.link::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-color: var(--default-color);
+  /* border: 0; */
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.06s ease-in-out;
+}
+
+.link:focus::after{
+
+  border: 2px solid var(--default-color);
+  opacity: 1;
+}
+
+.link:hover::after{
+  border: 0;
+  border-bottom: 2px solid var(--default-color);
+  width: calc(100%);
+  opacity: 1;
+}
+
+.link:active::after{
+  border: 0;
+  border-bottom: 2px solid var(--active);
+  width: calc(100%);
+  opacity: 1;
+}
+
+.link:active{
+  color: var(--active);
 }
 
 /*Header*/
@@ -238,12 +289,12 @@ h4 {
   font-weight: 800;
   font-size: 70px;
   line-height: 85px;
-  color: var(--light-grey);
+  color: var(--white);
 }
 
 .hero__discr {
   max-width: 790px;
-  margin-bottom: 90px;
+  margin-bottom: 89px;
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
@@ -251,8 +302,8 @@ h4 {
 }
 
 .hero__btn {
-  padding-right: 37px;
-  padding-bottom: 24px;
+  padding-right: 39px;
+  padding-bottom: 26px;
   font-weight: 700;
   font-size: 23px;
   line-height: 28px;
@@ -280,8 +331,30 @@ h4 {
   margin-right: 16px;
 }
 
+.nav__search{
+  position: relative;
+  /* fill: var(--dark); */
+  stroke: var(--dark);
+  stroke-width: 2px;
+}
 
+.nav__search::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-color: var(--default-color);
+  border: 2px solid var(--default-color);
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.06s ease-in-out;
+}
 
+.nav__search:focus::after{
+  opacity: 1;
+}
 
 
 /*about-us*/
@@ -366,11 +439,22 @@ h4 {
 }
 
 .btn-container__btn {
-  padding: 18px 36px;
+  padding: 19px 36px;
   margin: auto;
   background: transparent;
-  border: 3px solid #FF9900;
+  border: 3px solid var(--default-color);
   border-radius: 16px;
+  transition: 0.15s ease-in-out;
+}
+
+.btn-container__btn:focus,
+.btn-container__btn:hover{
+  background-color: var(--default-color);
+}
+
+.btn-container__btn:active{
+  border-color: var(--active);
+  background-color: var(--active);
 }
 
 .benefits__card {
@@ -432,7 +516,7 @@ h4 {
 }
 
 .work .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 
 }
 
@@ -446,9 +530,36 @@ h4 {
 }
 
 .work__link {
+  position: relative;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+}
+
+.work__link::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-color: var(--default-color);
+  border: 2px solid var(--default-color);
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.06s ease-in-out;
+}
+
+.work__link:focus::after{
+  opacity: 1;
+}
+
+.work__link:hover{
+  color: var(--default-color);
+}
+
+.work__link:active{
+  color: var(--active);
 }
 
 .step__container {
@@ -469,7 +580,7 @@ h4 {
 
 .step__discr {
   width: clamp(437px, 100%, 741px);
-  margin-bottom: 18px;
+  margin-bottom: 17px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -491,23 +602,35 @@ h4 {
 }
 
 .step__btn {
-  padding: 20px 38px;
+  padding: 21px 40px;
 }
 
 .contract__btn {
-
+  padding: 20px 36px;
   background: transparent;
   border: 1px solid var(--dark);
   border-radius: 16px;
+  color: var(--dark);
+  transition: 0.06s ease-in-out;
 }
 
 .contract__load {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: var(--dark);
+  color: inherit;
 }
 
+.contract__btn:focus,
+.contract__btn:hover{
+  background-color: var(--grey);
+  border: 1px solid var(--grey);
+  color: var(--white);
+}
+
+.contract__btn:active{
+background-color: var(--dark);
+}
 
 
 
@@ -529,18 +652,62 @@ h4 {
   justify-content: space-between;
   align-items: center;
   padding: 30px 0;
+  color: var(--dark);
   border-top: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--light-grey);
+  transition: 0.06s ease-in-out;
 }
 
-.questions__item:last-child {
-  border-bottom: 1px solid var(--light-grey);
+.questions__cross{
+  fill: var(--light-grey);
+  transition: 0.06s ease-in-out;
 }
+
+.questions__plus{
+  fill: var(--dark);
+  transition: 0.3s ease-in-out;
+}
+
+.questions__item:not(:first-child){
+  margin-top: -1px;
+}
+
+.questions__item:focus,
+.questions__item:hover{
+  color: var(--default-color);
+  border-color: var(--default-color);
+}
+
+.questions__item:active{
+  color: var(--dark);
+  border-color: var(--light-grey);
+}
+
+.questions__item:focus .questions__cross,
+.questions__item:hover .questions__cross{
+  fill: var(--default-color);
+}
+.questions__item:active .questions__cross{
+  fill: var(--light-grey);
+}
+
+
+.questions__item:focus .questions__plus,
+.questions__item:hover .questions__plus{
+  fill: var(--white);
+}
+.questions__item:active .questions__plus{
+  fill: var(--dark);
+  transform: rotate(45deg) translateX(10px) translateY(-25px);
+  /* transform: translateX(3px); */
+}
+
 
 .questions__text {
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  color: var(--dark);
+  color: inherit;
 }
 
 
@@ -581,6 +748,7 @@ h4 {
 
 
 .contacts__link {
+  position: relative;
   color: var(--light-grey);
   font-weight: 600;
   font-size: 18px;
@@ -591,6 +759,37 @@ h4 {
 .social__icon:not(:last-child) {
   margin-right: 21px;
 }
+
+.social__icon__svg{
+  position: relative;
+  fill: var(--grey);
+}
+.social__icon__svg::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-color: var(--default-color);
+  border: 2px solid var(--default-color);
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.06s ease-in-out;
+}
+
+.social__icon__svg:focus::after{
+  opacity: 1;
+}
+
+.social__icon__svg:hover{
+  fill: var(--default-color);
+}
+
+.social__icon__svg:active{
+  fill: var(--active);
+}
+
 
 .footer__application {
   margin-right: max(50px, calc(100% - 570px - 252px - 361px - 350px));
@@ -615,6 +814,17 @@ h4 {
   background: var(--dark-grey);
   border-radius: 16px;
   border: 0;
+  font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+  color: var(--white);
+}
+
+.application__item::placeholder{
+  font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+  color: var(--light-grey);
 }
 
 .application__item:not(:last-child) {
@@ -627,12 +837,13 @@ h4 {
 }
 
 .application__textarea {
-  padding: 21px 0px 0px 24px;
+  margin-bottom: 26px;
+  padding: 13px 0px 0px 24px;
   height: 150px;
 }
 
 .sendcheck__label {
-  padding-top: 16px;
+  padding-top: 14px;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
@@ -641,7 +852,7 @@ h4 {
 
 .sendcheck__btn {
   margin-right: 22px;
-  padding: 19px 52px;
+  padding: 19px 53px;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -649,7 +860,9 @@ h4 {
 }
 
 .application__sendcheck {
-  display: flex
+  padding-top: 3px;
+  display: flex;
+
 }
 
 .footer__discr {
@@ -664,4 +877,30 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+}
+
+.contacts__link::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-color: var(--default-color);
+  border: 2px solid var(--default-color);
+  width: calc(100% + 8px);
+  height: calc(100% + 8px);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: 0.06s ease-in-out;
+}
+
+.contacts__link:focus::after{
+  opacity: 1;
+}
+
+.contacts__link:hover{
+  color: var(--default-color);
+}
+
+.contacts__link:active{
+  color: var(--active);
 }
