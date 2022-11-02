@@ -235,8 +235,8 @@ h4 {
 
 .logo__img {
   object-fit: scale-down;
-  width: 225px;
-  height: 72px;
+  /* width: 225px;
+  height: 72px; */
 }
 
 .nav {
@@ -572,6 +572,7 @@ h4 {
 
 
 .step__title {
+  display: inline-block;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 24px;
@@ -580,6 +581,7 @@ h4 {
 
 .step__discr {
   width: clamp(437px, 100%, 741px);
+  margin-right: 0;
   margin-bottom: 17px;
   font-weight: 400;
   font-size: 16px;
@@ -818,6 +820,7 @@ background-color: var(--dark);
 font-size: 16px;
 line-height: 32px;
   color: var(--white);
+  transition: 0.06s ease-in-out;
 }
 
 .application__item::placeholder{
@@ -829,6 +832,10 @@ line-height: 32px;
 
 .application__item:not(:last-child) {
   margin-bottom: 25px;
+}
+.application__item:focus,
+.application__item:hover{
+  background: var(--grey);
 }
 
 .application__input {
