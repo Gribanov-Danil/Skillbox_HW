@@ -11,30 +11,39 @@
 }
 
 @media (max-width: 1691px) {
-.card{
-  width: clamp(704px, 100%, 869px);
-  /* max-width: 869px; */
-}
-.card:not(:last-child) {
-  margin-bottom: 32px;
-  margin-right: 0px;
-}
+  .card {
+    width: clamp(704px, 100%, 869px);
+    /* max-width: 869px; */
+  }
+
+  .card:not(:last-child) {
+    margin-bottom: 32px;
+    margin-right: 0px;
+  }
 
 
 }
 
-@media (max-width: 1373px){
+@media (max-width: 1373px) {
 
-  .header__container{
-    --offset: 54px;
+  .main {
+    margin: 0 50px;
+  }
+
+  .header {
+    margin-bottom: 39px;
+  }
+
+  .header__container {
+    --offset: 50px;
     width: calc(100% - var(--offset) * 2);
   }
 
-  .nav__list{
+  .nav__list {
     display: none;
   }
 
-  .header__burger{
+  .header__burger {
     position: relative;
     display: block;
     width: 30px;
@@ -44,7 +53,7 @@
     background: 0;
   }
 
-  .burger__line{
+  .burger__line {
     position: absolute;
     left: 50%;
     width: 30px;
@@ -52,26 +61,285 @@
     background-color: var(--dark);
     transform: translateX(-50%);
   }
-  .header__logo{
+
+  .header__logo {
     padding: 26px 0;
   }
 
-  .burger__line:nth-child(1){
+  .burger__line:nth-child(1) {
     top: 0px;
   }
 
-  .burger__line:nth-child(2){
+  .burger__line:nth-child(2) {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
 
-  .burger__line:nth-child(3){
+  .burger__line:nth-child(3) {
     bottom: 0px;
   }
 
-  .header__item:not(:last-child){
+  .header__item:not(:last-child) {
     margin-right: max(63px, calc((100% - 30px - 150px - 24px) / 2));
   }
 
+  .hero {
+    margin-bottom: 36px;
+    background: url('../img/hero/slider-1024/first__slider.png');
+    background-repeat: no-repeat;
+    border-radius: 32px;
+    border-top-left-radius: 32px;
+  }
 
+  .hero__container {
+    position: relative;
+    max-width: 924px;
+    padding: 160px 77px;
+  }
+
+  .hero__title {
+    margin-bottom: 16px;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__discr {
+    margin-bottom: 61px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .bullets {
+    bottom: 29px;
+    margin: 0 calc((100% - 238px) / 2);
+  }
+
+  .about-us {
+    margin-bottom: 63px;
+  }
+
+  .about-us__dicr {
+    margin-bottom: 59px;
+  }
+
+  .details-card__item:not(:last-child) {
+    margin-right: 217px;
+  }
+
+  .card {
+    min-height: 640px;
+    width: clamp(704px, 100%, 924px);
+
+  }
+
+  .details-card {
+    background-image: url('../img/about-us/man1024.jpg');
+  }
+
+  .benefits__card {
+    margin: 65px auto 65px 77px;
+  }
+
+
+  .work {
+    margin-bottom: 79px;
+  }
+
+  .work__stepslist {
+    margin-bottom: 51px;
+  }
+
+  .step__discr {
+    margin-bottom: 24px;
+  }
+
+  .step {
+    margin-right: 105px;
+  }
+
+
+  .faq {
+    margin-bottom: 79px;
+  }
+
+  .questions__text {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .questions__item:nth-child(2) .questions__text {
+    padding-right: 94px;
+  }
+
+
+  .footer__container {
+    padding: 50px;
+  }
+
+  .footer__discr {
+    display: none;
+  }
+
+  .footer__contacts {
+    margin-right: max(50px, calc(100% - 542px - 251px));
+  }
+
+  .footer__application {
+    width: clamp(408px, 53vw, 541px);
+    margin-right: 0;
+  }
+
+  .application__item {
+    width: 100%;
+  }
+
+  .sendcheck__btn {
+    padding: 19px 38px;
+  }
+}
+
+
+@media (max-width: 954px) {
+  .header {
+    height: 70px;
+  }
+
+  .header__container {
+    --offset: 54px;
+    width: calc(100% - var(--offset) * 2);
+  }
+
+  .header__item:not(:last-child) {
+    margin-right: max(63px, calc((100% - 29px - 150px - 17px) / 2));
+  }
+
+  .header__burger {
+    margin: 23px 0;
+  }
+
+  .header__logo {
+    padding: 11px 0;
+    transform: translateX(5px);
+  }
+
+  .nav {
+    padding: 23px 0;
+  }
+
+
+
+
+  .hero {
+    margin-bottom: 36px;
+    background: url(../img/hero/slider-768/firts__slider.jpg);
+    background-repeat: no-repeat;
+    border-radius: 24px;
+  }
+
+  .hero__container {
+    position: relative;
+    max-width: 630px;
+    padding: 160px 0 160px 40px;
+  }
+
+  .hero__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  .hero__discr {
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .bullets {
+    margin: 0 calc((100% - 126px) / 2);
+  }
+
+
+
+  .about-us {
+    margin-bottom: 81px;
+  }
+
+  .about-us__dicr {
+    margin-bottom: 54px;
+  }
+
+  .details-card {
+    background-image: url(../img/about-us/man768.jpg);
+    border-radius: 24px;
+  }
+
+  .card {
+    min-height: 650px;
+    width: clamp(504px, 100%, 668px);
+  }
+
+  .details-card__item:not(:last-child) {
+    margin-right: 47px;
+  }
+
+  .card__details-card {
+    border-radius: 24px;
+  }
+
+  .details-card__bottom {
+    padding: 34px 40px;
+  }
+
+  .cards__benefits {
+    min-height: 502px;
+  }
+
+  .card__container {
+    min-height: 235px;
+  }
+
+  .benefits__card {
+    margin: 35px auto 35px 40px;
+    padding-left: 129px;
+  }
+
+  .frs-benefit {
+    background: url(..//img/about-us/circle-sqr768.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .scn-benefit {
+    background: url(..//img/about-us/circle-citroen768.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+
+
+
+
+  .work__stepslist{
+    margin-bottom: 39px;
+  }
+  .work__item:not(:last-child) {
+    margin-right: 155px;
+  }
+
+  .step__container{
+    flex-direction: column-reverse;
+  }
+
+  .step__imgblock{
+    max-height: 284px;
+    margin-bottom: 39px;
+  }
+  .step {
+    width: 100%;
+    margin-right: 0;
+}
 }
