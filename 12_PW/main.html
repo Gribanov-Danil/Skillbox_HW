@@ -26,7 +26,8 @@
           <picture class="logo__img">
             <source srcset="img/header/Logo.png" media="(min-width: 1373px)">
             <source srcset="img/header/Logo150.png" media="(min-width: 1024px)">
-            <img class="logo__img__out" src="img/header/Logo.png" alt="">
+            <source srcset="img/header/Logo110.svg" media="(max-width: 1023px)">
+            <img class="logo__img__out" src="img/header/Logo110.svg" alt="">
           </picture>
 
         </a>
@@ -159,16 +160,16 @@
         </h2>
         <ul class="work__stepslist list-reset">
           <li class="work__item">
-            <a href="" class="work__link">1 шаг</a>
+            <a href="" class="work__link">1&nbsp;шаг</a>
           </li>
           <li class="work__item">
-            <a href="" class="work__link">2 шаг</a>
+            <a href="" class="work__link">2&nbsp;шаг</a>
           </li>
           <li class="work__item">
-            <a href="" class="work__link">3 шаг</a>
+            <a href="" class="work__link">3&nbsp;шаг</a>
           </li>
           <li class="work__item">
-            <a href="" class="work__link">4 шаг</a>
+            <a href="" class="work__link">4&nbsp;шаг</a>
           </li>
         </ul>
         <div class="step__container">
@@ -206,8 +207,9 @@
             <picture class="imgblock__picture">
               <source srcset="img/work/1step/1920.png" media="(min-width: 1186px)">
               <source srcset="img/work/1step/1024.png" media="(min-width: 954px)">
-              <source srcset="img/work/1step/768.jpg" media="(min-width: 320px)">
-              <img src="img/work/1step/1920.png" alt="1step">
+              <source srcset="img/work/1step/768.jpg" media="(min-width: 720px)">
+              <source srcset="img/work/1step/320.jpg" media="(max-width: 320px)">
+              <img src="img/work/1step/320.jpg" alt="1step">
             </picture>
           </div>
           <!-- <img class="step__img" src="img/work/1step/1step1920.jpg" alt="1step"> -->
@@ -279,7 +281,12 @@
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__contacts contacts">
-          <img class="contacts__icon" src="img/footer/Logo.png" alt="">
+          <picture class="contacts__icon">
+            <source media="(min-width: 721px)" srcset="img/footer/Logo.png">
+            <source media="(max-width: 720px)" srcset="img/footer/Logo320.png">
+            <img src="img/footer/Logo320.png" alt="">
+          </picture>
+          <!-- <img class="contacts__icon" src="img/footer/Logo.png" alt=""> -->
           <ul class="contacts__nav list-reset">
             <li class="contacts__item">
               <a href="#" class="contacts__link">О нас</a>

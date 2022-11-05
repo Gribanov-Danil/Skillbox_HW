@@ -121,10 +121,6 @@ img {
   max-width: 100%;
 }
 
-body {
-  min-width: 768px;
-}
-
 h1,
 h2,
 h3,
@@ -746,7 +742,7 @@ background-color: var(--dark);
 .contacts__icon {
   width: 224px;
   height: 72px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .footer__contacts {
