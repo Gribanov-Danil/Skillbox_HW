@@ -151,7 +151,7 @@
     margin-bottom: 51px;
   }
 
-  .step__discr {
+  .step__discr:last-child {
     margin-bottom: 24px;
   }
 
@@ -322,24 +322,81 @@
 
 
 
-
-  .work__stepslist{
+.work{
+  margin-bottom: 47px;
+}
+  .work__stepslist {
     margin-bottom: 39px;
   }
+
   .work__item:not(:last-child) {
     margin-right: 155px;
   }
 
-  .step__container{
+  .step__container {
     flex-direction: column-reverse;
   }
 
-  .step__imgblock{
+  .step__imgblock {
     max-height: 284px;
     margin-bottom: 39px;
   }
+
   .step {
     width: 100%;
     margin-right: 0;
-}
+  }
+
+  .step__discr{
+    display: contents;
+  }
+
+  .discr__container{
+    margin-bottom: 25px;
+  }
+
+
+
+
+
+
+
+
+  .faq{
+    margin-bottom: 110px;
+  }
+  .questions__text{
+    max-width: 570px;
+  }
+
+  .questions__item:nth-child(3) .questions__cross,
+  .questions__item:nth-child(5) .questions__cross{
+    margin-top: -17px;
+  }
+
+
+
+  .footer__container{
+    flex-direction: column-reverse;
+  }
+
+  .footer__application {
+    margin-bottom: 50px;
+    width: clamp(408px, 70.5vw, 541px);
+  }
+  .application__item{
+    width: clamp(408px, 70.5vw, 541px);
+  }
+  .application__textarea{
+    padding-top: 15px;
+  }
+  .sendcheck__btn {
+    margin-right: 21px;
+  }
+  .contacts__nav{
+    display: none;
+  }
+  .contacts__icon {
+    margin-bottom: 11px;
+  }
 }

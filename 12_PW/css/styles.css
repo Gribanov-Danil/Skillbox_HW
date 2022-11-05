@@ -591,10 +591,14 @@ h4 {
 .step__discr {
   width: clamp(437px, 100%, 741px);
   margin-right: -3799px;
-  margin-bottom: 17px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
+}
+
+.step__discr:last-child{
+  margin-bottom: 17px;
 }
 
 .step__buttonslist {
