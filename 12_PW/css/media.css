@@ -85,8 +85,7 @@
 
   .hero {
     margin-bottom: 36px;
-    background: url('../img/hero/slider-1024/first__slider.png');
-    background-repeat: no-repeat;
+
     border-radius: 32px;
     border-top-left-radius: 32px;
   }
@@ -95,6 +94,8 @@
     position: relative;
     max-width: 924px;
     padding: 160px 77px;
+    background: url('../img/hero/slider-1024/first__slider.png');
+    background-repeat: no-repeat;
   }
 
   .hero__title {
@@ -147,7 +148,7 @@
     margin-bottom: 79px;
   }
 
-  .work__stepslist {
+  .tabs-nav {
     margin-bottom: 51px;
   }
 
@@ -235,8 +236,7 @@
 
   .hero {
     margin-bottom: 36px;
-    background: url(../img/hero/slider-768/firts__slider.jpg);
-    background-repeat: no-repeat;
+
     border-radius: 24px;
   }
 
@@ -244,6 +244,8 @@
     position: relative;
     max-width: 630px;
     padding: 160px 0 160px 40px;
+    background: url(../img/hero/slider-768/firts__slider.jpg);
+    background-repeat: no-repeat;
   }
 
   .hero__title {
@@ -327,15 +329,18 @@
     margin-bottom: 47px;
   }
 
-  .work__stepslist {
+  .tabs-nav {
     margin-bottom: 39px;
   }
 
-  .work__item:not(:last-child) {
+  .tabs-nav__item:not(:last-child) {
     margin-right: 155px;
   }
 
-  .step__container {
+  /* .step__container {
+    flex-direction: column-reverse;
+  } */
+  .tabs__item--active{
     flex-direction: column-reverse;
   }
 
@@ -450,12 +455,13 @@
   .hero {
     min-height: 308px;
     margin-bottom: 59px;
-    background: url(../img/hero/slider-320/first__slider.png);
-    background-repeat: no-repeat;
+
     border-radius: 16px;
   }
 
   .hero__container {
+    background: url(../img/hero/slider-320/first__slider.png);
+    background-repeat: no-repeat;
     padding: 60px 22px;
   }
 
@@ -621,11 +627,11 @@
     margin-bottom: 60px;
   }
 
-  .work__stepslist {
+  .tabs-nav {
     margin-bottom: 15px;
   }
 
-  .work__item:not(:last-child) {
+  .tabs-nav__item:not(:last-child) {
     margin-right: 45px;
   }
 
@@ -633,7 +639,7 @@
     margin-bottom: 20px;
   }
 
-  .work__link {
+  .tabs-nav__btn {
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
